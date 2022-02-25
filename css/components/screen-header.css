@@ -1,0 +1,20 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.screen-header_title {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.screen-header_icons span {
+  margin-left: 20px;
+}
+
+.screen-header_icons .fa-gear {
+  margin-right: 20px;
+}
