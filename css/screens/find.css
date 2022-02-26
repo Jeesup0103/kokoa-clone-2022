@@ -1,0 +1,134 @@
+.find-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.find-icons_icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.find-icons_icon i {
+  color: rgba(82, 80, 80, 1);
+  font-size: 28px;
+}
+.find-icons_icon span {
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  width: 70px;
+  text-align: center;
+}
+
+.recommended-friends {
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+  margin-top: 25px;
+  padding: 20px 0px;
+}
+
+.recommended-friends h6 {
+  color: var(--grey-font);
+  font-size: 16px;
+}
+
+.recommended-friends_text {
+  display: block;
+  margin: 100px 0px;
+  text-align: center;
+  color: var(--grey-font);
+  font-size: 16px;
+}
+
+.open-chat_header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  color: var(--grey-font);
+}
+
+.open-chat_header span {
+  opacity: 0.8;
+}
+
+.open-post {
+  padding-bottom: 15px;
+  border-bottom: var(--main-border);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.open-post_title {
+  margin-top: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.open-post_hashtags {
+  text-transform: uppercase;
+  color: var(--grey-font);
+}
+
+.open-post_members {
+  color: var(--grey-font);
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.open-post_user-img {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  border-radius: 5px;
+}
+
+.open-post_member-count {
+  color: var(--grey-font);
+  font-size: 14px;
+}
+
+.open-post_member-divider {
+  width: 1px;
+  height: 12px;
+  background-color: var(--grey-font);
+  margin: 0px 5px;
+}
+
+.open-post_member-status {
+  color: fuchsia;
+}
+
+.open-post_img {
+  position: relative;
+}
+
+.open-post_heart {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  width: 40px;
+  color: white;
+  background-color: rgba(87, 86, 86, 0.767);
+  padding: 4px 6px;
+  border-radius: 15px;
+  opacity: 0.8;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  ㅓㅕㄴ
+}
+.open-post_heart i {
+  margin-right: 3px;
+}
+
+.open-post_main-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  justify-content: center;
+}

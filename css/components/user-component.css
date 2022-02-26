@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 10px 0px;
 }
 .user-component_column:first-child {
   display: flex;
@@ -20,7 +21,6 @@
   height: 50px;
   border-radius: 20px;
   object-fit: cover;
-  margin-top: 10px;
 }
 
 .user-component_img--lg {
@@ -38,6 +38,7 @@
 }
 
 .user-component_title--not-bold {
+  font-size: 18px;
   font-weight: 400;
 }
 
