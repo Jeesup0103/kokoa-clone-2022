@@ -1,0 +1,26 @@
+.icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.icon-row_icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.icon-row_icon i {
+  color: rgba(82, 80, 80, 1);
+  font-size: 28px;
+}
+.icon-row_icon span {
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  width: 70px;
+  text-align: center;
+}

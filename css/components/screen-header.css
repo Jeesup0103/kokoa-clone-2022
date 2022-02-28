@@ -17,6 +17,6 @@
   position: relative;
 }
 
-.screen-header_icons .fa-gear {
+.screen-header_icons span:last-child {
   margin-right: 20px;
 }
