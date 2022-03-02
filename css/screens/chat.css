@@ -1,0 +1,145 @@
+#chat-screen {
+  background-color: #aac1cf;
+  height: 10000vh;
+}
+
+#chat-screen .status-bar {
+  background-color: #aac1cf;
+  z-index: 2;
+}
+#chat-screen .alt-header {
+  background-color: #aac1cf;
+  z-index: 1;
+}
+
+.main-chat {
+  margin-top: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat_timestamp {
+  background-color: #92a4b2;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.message-row_content {
+  margin-left: 15px;
+}
+
+.message_author {
+  opacity: 0.8;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.message_info {
+  display: flex;
+  align-items: end;
+}
+
+.message_bubble {
+  background-color: white;
+  padding: 14px 10px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+}
+
+.message_time {
+  margin-left: 5px;
+  opacity: 0.8;
+  font-size: 15px;
+}
+
+.message-row_mine {
+  justify-content: flex-end;
+}
+
+.message-row_mine .message_bubble {
+  background-color: #fbe100;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 15px;
+  order: 2;
+}
+.message-row_mine .message_time {
+  order: 1;
+  margin-right: 5px;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 15px;
+  box-sizing: border-box;
+}
+
+.reply .reply_column:first-child {
+  width: 6%;
+}
+
+.reply .reply_column:last-child {
+  width: 94%;
+  position: relative;
+}
+
+.reply input {
+  height: 20px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 7px;
+}
+
+.reply_column:last-child > i,
+.reply_column:last-child button {
+  position: absolute;
+}
+
+.reply_column .fa-plus {
+  border: solid 2px rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.4);
+  padding: 2px;
+  border-radius: 5px;
+  font-size: 11px;
+  height: 10px;
+}
+
+.reply_column:last-child button {
+  bottom: 2px;
+  right: -10px;
+  background-color: #fbe100;
+  border: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+/*smile*/
+.reply_column:last-child > i {
+  bottom: 5px;
+  color: rgba(0, 0, 0, 0.4);
+  right: 23px;
+}
+
+.reply_column button:focus,
+.reply_column button:active {
+  outline: none;
+}
