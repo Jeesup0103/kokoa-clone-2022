@@ -5,6 +5,7 @@
   align-items: center;
   justify-items: center;
   width: 100%;
+  padding-right: 20px;
 }
 
 .alt-header_title {
@@ -23,7 +24,7 @@
 }
 
 .alt-header_column .fa-magnifying-glass {
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .alt-header_center {

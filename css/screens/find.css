@@ -111,3 +111,21 @@
   object-fit: cover;
   justify-content: center;
 }
+
+.open-post_heart:hover .fa-heart {
+  will-change: transform;
+  animation: heartBounce 1s linear infinite;
+}
+
+@keyframes heartBounce {
+  0% {
+    color: white;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+  }
+}

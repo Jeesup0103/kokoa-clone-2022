@@ -17,6 +17,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeInChatScreen 1s linear;
 }
 
 .chat_timestamp {
@@ -107,6 +108,7 @@
   padding-top: 2px;
   padding-bottom: 2px;
   padding-left: 7px;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply_column:last-child > i,
@@ -131,6 +133,7 @@
   width: 22px;
   height: 22px;
   border-radius: 50%;
+  transition: all 0.3s ease-in-out;
 }
 /*smile*/
 .reply_column:last-child > i {
@@ -142,4 +145,79 @@
 .reply_column button:focus,
 .reply_column button:active {
   outline: none;
+}
+
+/*
+ANIMATIONS TRANSITIONS
+*/
+
+@keyframes fadeInChatScreen {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInMessageReceived {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeInMessageSent {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.reply .reply_column:first-child,
+.reply .fa-face-smile {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply_column:first-child,
+.reply:focus-within .fa-face-smile {
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 95vw;
+  transform: translateX(-7%);
+}
+
+.reply:focus-within button {
+  transform: translateX(-1px);
+}
+
+.reply:focus-within {
+  background-color: #aac1cf;
+}
+
+.messageF {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInMessageReceived 1s linear forwards;
+}
+.messageS {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInMessageReceived 1s linear 0.5s forwards;
+}
+.messageT {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInMessageSent 1s linear 1s forwards;
 }
